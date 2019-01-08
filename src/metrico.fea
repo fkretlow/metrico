@@ -1,0 +1,6 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+include(metricoCLASSES.fea);
+include(metricoGSUB.fea);
+include(metricoGPOS.fea);

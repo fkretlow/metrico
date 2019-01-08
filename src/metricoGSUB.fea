@@ -1,0 +1,83 @@
+# GSUB
+
+# =================================================================================
+# LOOKUP DEFINITIONS
+
+lookup LIGA_barlines {
+	lookupflag 0;
+	sub  bar bar      by  bar.double       ;
+	sub  bar bar bar  by  bar.final        ;
+	sub  colon bar    by  bar.repeatEnd    ;
+	sub  bar colon    by  bar.repeatStart  ;
+	} LIGA_barlines;
+
+lookup CALT_rhythmDot {
+	lookupflag 0;
+	sub @notes period' by rhythmDot  ;
+	} CALT_rhythmDot;
+
+lookup CALT_beamedNotes {
+	lookupflag 0;
+	sub  @beamableNotes      e' rhythmDot  @beamableNotes  by  beamed.LNSN  ;
+	sub  @beamableNotes      e'            @beamableNotes  by  beamed.LNSN  ;
+	sub  @sixteenths         s'            @sixteenths     by  beamed.LLSS  ;
+	sub  @eighths rhythmDot  s'            @eighths        by  beamed.LSSN  ;
+	sub  @eighths            s'            @eighths        by  beamed.LSSN  ;
+	sub  @eighths rhythmDot  s'            @sixteenths     by  beamed.LNSS  ;
+	sub  @eighths            s'            @sixteenths     by  beamed.LNSS  ;
+	sub  @sixteenths         s'            @eighths        by  beamed.LLSN  ;
+	sub  @eighths rhythmDot  e'            @beamableNotes  by  beamed.LNSN  ;
+	sub  @eighths rhythmDot  e'                            by  beamed.LNNN  ;
+	sub                      e' rhythmDot  @beamableNotes  by  beamed.NNSN  ;
+	sub                      e'            @beamableNotes  by  beamed.NNSN  ;
+	sub  @beamableNotes      e'                            by  beamed.LNNN  ;
+	sub                      s'            @beamableNotes  by  beamed.NNSS  ;
+	sub  @sixteenths         s'                            by  beamed.LLNN  ;
+	sub  @eighths rhythmDot  s'                            by  beamed.LSNN  ;
+	sub  @eighths            s'                            by  beamed.LSNN  ;
+	} CALT_beamedNotes;
+
+lookup CALT_beamedRhythmDot {
+	lookupflag 0;
+	sub  @beamedNotes  rhythmDot'  @beamedNotes  by  period.beamed  ;
+	} CALT_beamedRhythmDot;
+
+lookup CALT_tuplets {
+	lookupflag 0;
+	sub  @regularNumbers' @beamedNotes    by  @tupletNumbers           ;
+	sub  @regularNumbers' @unbeamedNotes  by  @bracketedTupletNumbers  ;
+	} CALT_tuplets;
+
+lookup CALT_shortStems {
+	lookupflag 0;
+	sub  @bracketedTupletNumbers                [h q e s t]'  by  [half.shortStem quarter.shortStem eighth.shortStem sixteenth.shortStem thirtysecond.shortStem]  ;
+	sub  @bracketedTupletNumbers         @notes [h q e s t]'  by  [half.shortStem quarter.shortStem eighth.shortStem sixteenth.shortStem thirtysecond.shortStem]  ;
+	sub  @bracketedTupletNumbers  @notes @notes [h q e s t]'  by  [half.shortStem quarter.shortStem eighth.shortStem sixteenth.shortStem thirtysecond.shortStem]  ;
+	} CALT_shortStems;
+
+
+lookup shortFlags {
+	lookupflag 0;
+	sub  [e s t]  by  [eighth.shortFlag sixteenth.shortFlag thirtysecond.shortFlag];
+	} shortFlags;
+
+lookup CALT_shortFlags {
+	lookupflag 0;
+	sub  [e s t]' lookup shortFlags  rhythmDot  ;
+	} CALT_shortFlags;
+
+# =================================================================================
+# FEATURES
+
+feature liga {
+	lookup LIGA_barlines         ;
+    } liga;
+
+feature calt {
+	lookup CALT_rhythmDot        ;
+	lookup CALT_beamedNotes      ;
+	lookup CALT_beamedRhythmDot  ;
+	lookup CALT_tuplets          ;
+	lookup CALT_shortStems       ;
+	lookup CALT_shortFlags       ;
+	} calt;

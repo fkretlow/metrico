@@ -1,0 +1,133 @@
+# =================================================================================
+# CLASS DEFINITIONS
+
+@numbers = [
+	zero one two three four five six seven eight nine
+	i_zero i_one i_two i_three i_four i_five i_six i_seven i_eight i_nine
+	];
+@regularNumbers = [
+	zero one two three four five six seven eight nine
+	];
+@italicNumbers = [
+	i_zero i_one i_two i_three i_four i_five i_six i_seven i_eight i_nine
+	];
+@tupletNumbers = [
+	zero.tuplet one.tuplet two.tuplet three.tuplet four.tuplet five.tuplet six.tuplet seven.tuplet eight.tuplet nine.tuplet
+	];
+@bracketedTupletNumbers = [
+	zero.tuplet.bracket one.tuplet.bracket two.tuplet.bracket three.tuplet.bracket four.tuplet.bracket five.tuplet.bracket six.tuplet.bracket seven.tuplet.bracket eight.tuplet.bracket nine.tuplet.bracket
+	];
+
+@notes = [
+	d w h q e s t
+	eighth.shortFlag sixteenth.shortFlag thirtysecond.shortFlag
+	half.shortStem quarter.shortStem eighth.shortStem sixteenth.shortStem thirtysecond.shortStem
+	beamed.NNSN
+	beamed.LNSN
+	beamed.LNNN
+	beamed.NNSS
+	beamed.LLSS
+	beamed.LLNN
+	beamed.LNSS
+	beamed.LLSN
+	beamed.LSSN
+	beamed.LSNN
+	];
+@notesAndRhythmDot = [
+	d w h q e s t
+	eighth.shortFlag sixteenth.shortFlag thirtysecond.shortFlag
+	half.shortStem quarter.shortStem eighth.shortStem sixteenth.shortStem thirtysecond.shortStem
+	beamed.NNSN
+	beamed.LNSN
+	beamed.LNNN
+	beamed.NNSS
+	beamed.LLSS
+	beamed.LLNN
+	beamed.LNSS
+	beamed.LLSN
+	beamed.LSSN
+	beamed.LSNN
+	period period.beamed
+	];
+@stemlessNotes = [
+	w d
+	];
+@flaggedNotes = [
+	e s t
+	eighth.shortFlag sixteenth.shortFlag thirtysecond.shortFlag
+	eighth.shortStem sixteenth.shortStem thirtysecond.shortStem
+	];
+@unbeamedNotes = [
+	d w h q e s t
+	eighth.shortFlag sixteenth.shortFlag thirtysecond.shortFlag
+	half.shortStem quarter.shortStem eighth.shortStem sixteenth.shortStem thirtysecond.shortStem
+	];
+@beamedNotes = [
+	beamed.NNSN
+	beamed.LNSN
+	beamed.LNNN
+	beamed.NNSS
+	beamed.LLSS
+	beamed.LLNN
+	beamed.LNSS
+	beamed.LLSN
+	beamed.LSSN
+	beamed.LSNN
+	period.beamed
+	];
+@beamableNotes = [
+	e s
+	beamed.NNSN
+	beamed.LNSN
+	beamed.LNNN
+	beamed.NNSS
+	beamed.LLSS
+	beamed.LLNN
+	beamed.LNSS
+	beamed.LLSN
+	beamed.LSSN
+	beamed.LSNN
+	];
+@thirtyseconds = [
+	t
+	thirtysecond.shortFlag
+	thirtysecond.shortStem
+	];
+@sixteenths = [
+	s
+	sixteenth.shortFlag
+	sixteenth.shortStem
+	beamed.NNSS
+	beamed.LLSS
+	beamed.LLNN
+	beamed.LNSS
+	beamed.LLSN
+	beamed.LSSN
+	beamed.LSNN
+	];
+@eighths = [
+	e
+	eighth.shortFlag
+	eighth.shortStem
+	beamed.NNSN
+	beamed.LNSN
+	beamed.LNNN
+	];
+@quarters = [
+	q
+	quarter.shortStem
+	];
+@halves = [
+	h
+	half.shortStem
+	];
+
+@operators = [
+	equal plus hyphen endash
+	less greater
+	];
+
+@parens = [
+	parenleft parenright
+	bracketleft bracketright
+	];
