@@ -3,6 +3,7 @@ Metrico is a font that allows to easily create metronome marks, metric modulatio
 
 <!-- ![sample](docs/example.svg) -->
 ![examples](docs/metrico_examples.png)
+<!-- <img src="docs/metrico_examples.png" alt="layers" width="868"> -->
 
 ### Recent changes  
 - Initial commit, rather a proof of concept than a finished font. Metronome marks, basic metric modulations (including single note values in tuplets) and a few swing indications work.
