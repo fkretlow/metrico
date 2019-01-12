@@ -18,6 +18,6 @@ Due to [a bug in the Qt framework](https://bugreports.qt.io/browse/QTBUG-69803) 
 
 **Sibelius:** Not tested. I expect Metrico to work fine with Sibelius 2018.11 or greater.
 
-### Donations
-Metrico is licensed under the SIL Open Font License. That means that it is free to use.  
-Developing fonts does take time and effort though. If you find the font useful, please consider supporting me with a donation via [paypal.](https://paypal.me/floriankretlow)
+
+_Metrico is licensed under the SIL Open Font License. That means that it is free to use.  
+Developing fonts does take time and effort though. If you find the font useful, please consider supporting me with a donation via [paypal.](https://paypal.me/floriankretlow)_
