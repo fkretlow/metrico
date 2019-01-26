@@ -122,6 +122,11 @@
 	half.shortStem
 	];
 
+@swingGroups = [
+	swing.eighths.ternary
+	swing.quarters.ternary
+	];
+
 @operators = [
 	equal plus hyphen endash
 	less greater

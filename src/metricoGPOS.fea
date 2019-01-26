@@ -5,9 +5,9 @@
 
 lookup KERN_rhythmDots {
 	lookupflag 0;
-	pos        eighth.shortFlag  rhythmDot' <-285 -25 -285 0>   ;
-	pos     sixteenth.shortFlag  rhythmDot' <-285 -25 -285 0>   ;
-	pos  thirtysecond.shortFlag  rhythmDot' <-285 -25 -285 0>   ;
+	pos        eighth.shortFlag  rhythmDot' <-255 -25 -255 0>   ;
+	pos     sixteenth.shortFlag  rhythmDot' <-255 -25 -255 0>   ;
+	pos  thirtysecond.shortFlag  rhythmDot' <-255 -25 -255 0>   ;
 	} KERN_rhythmDots;
 
 lookup KERN_notes {

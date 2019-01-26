@@ -4,7 +4,7 @@ FullName: Metrico
 FamilyName: Metrico
 Weight: Standard
 Copyright: Copyright 2019 Florian Kretlow
-Version: 0.1.0.14
+Version: 0.1.1.2
 ItalicAngle: 0
 UnderlinePosition: -200
 UnderlineWidth: 100
@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1324930714
-ModificationTime: 1546983488
+ModificationTime: 1548524118
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -51,7 +51,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 30 10 8
+WinInfo: 58000 10 8
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -61,7 +61,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 0 262144 131072 87381 190841 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "chainleft"""  "chain"""  "acc""" 
-BeginChars: 1114112 102
+BeginChars: 1114112 104
 
 StartChar: zero
 Encoding: 48 48 0
@@ -3773,6 +3773,110 @@ LayerCount: 4
 Fore
 Refer: 24 46 N 1 0 0 1 0 302 2
 Refer: 25 44 N 1 0 0 1 10 0 2
+EndChar
+
+StartChar: swing.eighths.ternary
+Encoding: 58016 58016 102
+Width: 1488
+VWidth: 1010
+Flags: HMW
+HStem: -34 338<220.016 306.545>
+VStem: 425 46<276 689> 425 30<981.906 1045> 699 53<240.135 519.914>
+LayerCount: 4
+Fore
+SplineSet
+1358 1060 m 1
+ 1310 1060 l 1
+ 1310 1218 l 1
+ 1008 1218 l 1
+ 1008 1266 l 1
+ 1358 1266 l 1
+ 1358 1060 l 1
+90 1060 m 1
+ 90 1266 l 1
+ 440 1266 l 1
+ 440 1218 l 1
+ 138 1218 l 1
+ 138 1060 l 1
+ 90 1060 l 1
+1406 109 m 1
+ 1420 168 1435 228 1435 297 c 0
+ 1435 417 1379 525 1284 569 c 0
+ 1268 576 1236 589 1207 589 c 1
+ 1207 183 l 2
+ 1207 81 1075 -34 935 -34 c 0
+ 855 -34 786 4 786 85 c 0
+ 786 188 918 304 1057 304 c 0
+ 1097 304 1134 295 1161 276 c 1
+ 1161 945 l 1
+ 1191 945 l 1
+ 1208 792 1331 661 1376 605 c 0
+ 1432 534 1488 432 1488 301 c 0
+ 1488 239 1472 144 1451 91 c 1
+ 1406 109 l 1
+50 85 m 0
+ 50 188 182 304 321 304 c 0
+ 361 304 398 295 425 276 c 1
+ 425 865 l 1
+ 471 865 l 1
+ 471 183 l 2
+ 471 81 339 -34 199 -34 c 0
+ 119 -34 50 4 50 85 c 0
+EndSplineSet
+Refer: 70 57613 N 1 0 0 1 662 960 2
+EndChar
+
+StartChar: swing.quarters.ternary
+Encoding: 58017 58017 103
+Width: 1488
+VWidth: 1010
+Flags: HW
+HStem: -42 51<110.131 260.5> 261 51<303.85 424.948>
+VStem: 50 46<17.6805 106.788> 440 46<166.096 253.676 281 1045>
+LayerCount: 4
+Fore
+SplineSet
+440 855 m 1
+ 486 855 l 1
+ 486 187 l 2
+ 486 126 427 37 386 9 c 0
+ 347 -19 288 -42 233 -42 c 0
+ 134 -42 50 -18 50 83 c 0
+ 50 153 109 234 159 266 c 0
+ 204 296 280 312 325 312 c 0
+ 366 312 409 303 440 281 c 1
+ 440 855 l 1
+443 213 m 0
+ 443 245 418 261 384 261 c 0
+ 314 261 237 200 173 154 c 0
+ 125 117 96 96 96 54 c 0
+ 96 30 115 9 154 9 c 0
+ 213 9 299 70 344 101 c 0
+ 379 126 443 174 443 213 c 0
+1358 1060 m 1
+ 1310 1060 l 1
+ 1310 1218 l 1
+ 1003 1218 l 1
+ 1003 1266 l 1
+ 1358 1266 l 1
+ 1358 1060 l 1
+80 1060 m 1
+ 80 1266 l 1
+ 435 1266 l 1
+ 435 1218 l 1
+ 128 1218 l 1
+ 128 1060 l 1
+ 80 1060 l 1
+846 85 m 0
+ 846 188 978 304 1117 304 c 0
+ 1157 304 1194 295 1221 276 c 1
+ 1221 915 l 1
+ 1267 915 l 1
+ 1267 183 l 2
+ 1267 81 1135 -34 995 -34 c 0
+ 915 -34 846 4 846 85 c 0
+EndSplineSet
+Refer: 70 57613 N 1 0 0 1 657 960 2
 EndChar
 EndChars
 EndSplineFont

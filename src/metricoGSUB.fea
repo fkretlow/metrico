@@ -11,6 +11,12 @@ lookup LIGA_barlines {
 	sub  bar colon    by  bar.repeatStart  ;
 	} LIGA_barlines;
 
+lookup LIGA_swingGroups {
+	lookupflag 0;
+	sub  three q e    by  swing.eighths.ternary  ;
+	sub  three h q    by  swing.quarters.ternary ;
+	} LIGA_swingGroups;
+
 lookup CALT_rhythmDot {
 	lookupflag 0;
 	sub @notes period' by rhythmDot  ;
@@ -71,6 +77,7 @@ lookup CALT_shortFlags {
 
 feature liga {
 	lookup LIGA_barlines         ;
+	lookup LIGA_swingGroups      ;
     } liga;
 
 feature calt {
