@@ -2,9 +2,9 @@ SplineFontDB: 3.0
 FontName: Metrico
 FullName: Metrico
 FamilyName: Metrico
-Weight: Standard
+Weight: Book
 Copyright: Copyright 2019 Florian Kretlow
-Version: 0.1.1.2
+Version: 0.1.3.1
 ItalicAngle: 0
 UnderlinePosition: -200
 UnderlineWidth: 100
@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1324930714
-ModificationTime: 1548524118
+ModificationTime: 1555798355
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -44,14 +44,14 @@ HheadDOffset: 1
 OS2Vendor: 'PfEd'
 MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033
+LangName: 1033 "" "" "Regular"
 Encoding: UnicodeFull
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 58000 10 8
+WinInfo: 30 10 8
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -504,17 +504,17 @@ EndChar
 
 StartChar: hyphen
 Encoding: 45 45 14
-Width: 0
-VWidth: 2000
+Width: 990
+VWidth: 1900
 Flags: HMW
 LayerCount: 4
 Fore
 SplineSet
-80 231 m 1
- 80 277 l 1
- 420 277 l 1
- 420 231 l 1
- 80 231 l 1
+300 126 m 1
+ 300 182 l 1
+ 690 182 l 1
+ 690 126 l 1
+ 300 126 l 1
 EndSplineSet
 EndChar
 
@@ -731,25 +731,25 @@ EndChar
 
 StartChar: plus
 Encoding: 43 43 22
-Width: 0
-VWidth: 0
+Width: 1040
+VWidth: -100
 Flags: HMW
 LayerCount: 4
 Fore
 SplineSet
-227 474 m 1
- 273 474 l 1
- 273 277 l 1
- 470 277 l 1
- 470 231 l 1
- 273 231 l 1
- 273 34 l 1
- 227 34 l 1
- 227 231 l 1
- 30 231 l 1
- 30 277 l 1
- 227 277 l 1
- 227 474 l 1
+492 374 m 1
+ 548 374 l 1
+ 548 182 l 1
+ 740 182 l 1
+ 740 126 l 1
+ 548 126 l 1
+ 548 -66 l 1
+ 492 -66 l 1
+ 492 126 l 1
+ 300 126 l 1
+ 300 182 l 1
+ 492 182 l 1
+ 492 374 l 1
 EndSplineSet
 EndChar
 
@@ -1452,11 +1452,10 @@ StartChar: p
 Encoding: 112 112 42
 Width: 0
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 4
 Fore
 Refer: 22 43 N 1 0 0 1 0 0 2
-Validated: 1
 EndChar
 
 StartChar: q
@@ -1495,23 +1494,23 @@ EndChar
 
 StartChar: equal
 Encoding: 61 61 44
-Width: 1200
+Width: 1100
 VWidth: 1895
 Flags: HW
-HStem: 41 56<350 850> 221 56<350 850>
+HStem: 41 56<300 800> 221 56<300 800>
 LayerCount: 4
 Fore
 SplineSet
-350 221 m 1
- 350 277 l 1
- 850 277 l 1
- 850 221 l 1
- 350 221 l 1
-350 41 m 1
- 350 97 l 1
- 850 97 l 1
- 850 41 l 1
- 350 41 l 1
+300 221 m 1
+ 300 277 l 1
+ 800 277 l 1
+ 800 221 l 1
+ 300 221 l 1
+300 41 m 5
+ 300 97 l 5
+ 800 97 l 5
+ 800 41 l 5
+ 300 41 l 5
 EndSplineSet
 EndChar
 
@@ -2180,7 +2179,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: period.beamed
+StartChar: rhythmDot.beamed
 Encoding: 57914 57914 63
 Width: 230
 VWidth: 20
@@ -3641,36 +3640,37 @@ EndChar
 
 StartChar: greater
 Encoding: 62 62 95
-Width: 1642
+Width: 1542
 VWidth: 1895
 Flags: HW
-HStem: 134 56<350 1010>
+HStem: 134 56<300 960>
 LayerCount: 4
 Fore
 SplineSet
-1010 134 m 1
- 350 134 l 1
- 350 190 l 1
- 1010 190 l 1
- 1006 232 976 303 976 320 c 0
- 976 323 976 327 982 327 c 0
- 991 327 1035 299 1143 243 c 0
- 1245 189 1292 170 1292 163 c 0
- 1292 156 1242 138 1144 84 c 0
- 1027 20 987 -4 979 -4 c 0
- 977 -4 976 -1 976 2 c 0
- 976 17 1006 90 1010 134 c 1
+960 134 m 1
+ 300 134 l 1
+ 300 190 l 1
+ 960 190 l 1
+ 956 232 926 303 926 320 c 0
+ 926 323 926 327 932 327 c 0
+ 941 327 985 299 1093 243 c 0
+ 1195 189 1242 170 1242 163 c 0
+ 1242 156 1192 138 1094 84 c 0
+ 977 20 937 -4 929 -4 c 0
+ 927 -4 926 -1 926 2 c 0
+ 926 17 956 90 960 134 c 1
 EndSplineSet
 EndChar
 
 StartChar: less
 Encoding: 60 60 96
-Width: 1642
+Width: 1542
 VWidth: 1895
 Flags: HW
+HStem: 134 56<250 910>
 LayerCount: 4
 Fore
-Refer: 95 62 N -1 0 0 -1 1642 283 2
+Refer: 95 62 N -1 0 0 -1 1542 324 2
 EndChar
 
 StartChar: bar.double

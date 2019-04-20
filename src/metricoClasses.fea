@@ -47,7 +47,7 @@
 	beamed.LLSN
 	beamed.LSSN
 	beamed.LSNN
-	period period.beamed
+	period rhythmDot rhythmDot.beamed
 	];
 @stemlessNotes = [
 	w d
@@ -73,7 +73,7 @@
 	beamed.LLSN
 	beamed.LSSN
 	beamed.LSNN
-	period.beamed
+	rhythmDot.beamed
 	];
 @beamableNotes = [
 	e s
@@ -129,6 +129,10 @@
 
 @operators = [
 	equal plus hyphen endash
+	less greater
+	];
+
+@arrows = [
 	less greater
 	];
 

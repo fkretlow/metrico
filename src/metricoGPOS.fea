@@ -4,76 +4,83 @@
 # LOOKUP DEFINITIONS
 
 lookup KERN_rhythmDots {
-	lookupflag 0;
-	pos        eighth.shortFlag  rhythmDot' <-255 -25 -255 0>   ;
-	pos     sixteenth.shortFlag  rhythmDot' <-255 -25 -255 0>   ;
-	pos  thirtysecond.shortFlag  rhythmDot' <-255 -25 -255 0>   ;
-	} KERN_rhythmDots;
+    lookupflag 0;
+    pos        eighth.shortFlag  rhythmDot' <-255 -25 -255 0>   ;
+    pos     sixteenth.shortFlag  rhythmDot' <-255 -25 -255 0>   ;
+    pos  thirtysecond.shortFlag  rhythmDot' <-255 -25 -255 0>   ;
+    } KERN_rhythmDots;
 
 lookup KERN_notes {
-	lookupflag 0;
-	pos  @quarters rhythmDot  @notes' <325 0 325 0>   ;
-	pos  @quarters            @notes' <300 0 300 0>   ;
-	pos  @halves   rhythmDot  @notes' <375 0 375 0>   ;
-	pos  @halves              @notes' <350 0 350 0>   ;
-	pos  w rhythmDot  @notes' <425 0 425 0>   ;
-	pos  w            @notes' <400 0 400 0>   ;
-	pos  d rhythmDot  @notes' <475 0 475 0>   ;
-	pos  d            @notes' <450 0 450 0>   ;
-	} KERN_notes;
+    lookupflag 0;
+    pos  @quarters rhythmDot  @notes' <325 0 325 0>   ;
+    pos  @quarters            @notes' <300 0 300 0>   ;
+    pos  @halves   rhythmDot  @notes' <375 0 375 0>   ;
+    pos  @halves              @notes' <350 0 350 0>   ;
+    pos  w rhythmDot  @notes' <425 0 425 0>   ;
+    pos  w            @notes' <400 0 400 0>   ;
+    pos  d rhythmDot  @notes' <475 0 475 0>   ;
+    pos  d            @notes' <450 0 450 0>   ;
+    } KERN_notes;
 
 lookup KERN_stemlessNotesVerticalPosition {
-	lookupflag 0;
-	pos  @regularNumbers  @operators  @stemlessNotes' <0 90 0 0>                               ;
-	pos                               @stemlessNotes' <0 90 0 0>  @operators  @regularNumbers  ;
-	} KERN_stemlessNotesVerticalPosition;
+    lookupflag 0;
+    pos  @regularNumbers  @operators  @stemlessNotes' <0 90 0 0>                               ;
+    pos                               @stemlessNotes' <0 90 0 0>  @operators  @regularNumbers  ;
+    } KERN_stemlessNotesVerticalPosition;
 
 lookup KERN_operators {
-	lookupflag 0;
-	pos                   @operators' <-100 100 -200 0>  @regularNumbers  ;
-	pos  @regularNumbers  @operators' <-100 100 -200 0>                   ;
-	} KERN_operators;
+    lookupflag 0;
+    pos                   @operators' <-50 100 -100 0>  @regularNumbers  ;
+    pos  @regularNumbers  @operators' <-50 100 -100 0>                   ;
+    } KERN_operators;
+
+lookup KERN_parenthesesAndArrows {
+    lookupflag 0;
+    pos  @parens' <0 -50 -250 0>  @arrows                              ;
+    pos                           @arrows  @parens' <-250 -50 -250 0>  ;  
+    } KERN_parenthesesAndArrows;
 
 lookup KERN_tupletPosition {
-	lookupflag 0;
-	# triplets
-		# eee
-		pos  three.tuplet'         <1170 1170 0 0>  beamed.NNSN beamed.LNSN beamed.LNNN    ;
-		# sss
-		pos  three.tuplet'         <1070 1170 0 0>  beamed.NNSS beamed.LLSS beamed.LLNN    ;
-		# es
-		pos  three.tuplet'         < 810 1170 0 0>  beamed.NNSN beamed.LSNN                ;
-	
-	# quintuplets
-		# e.e
-		pos  five.tuplet'          < 900 1170 0 0>  beamed.NNSN period.beamed beamed.LNNN  ;
-		pos  five.tuplet'          <1792 1170 0 0>  beamed.NNSS beamed.LLSS beamed.LLSS beamed.LLSS beamed.LLNN  ;
-		pos  five.tuplet'          <1932 1170 0 0>  beamed.NNSN beamed.LNSN beamed.LNSN beamed.LNSN beamed.LNNN  ;
+    lookupflag 0;
+    # triplets
+        # eee
+        pos  three.tuplet'         <1170 1170 0 0>  beamed.NNSN beamed.LNSN beamed.LNNN    ;
+        # sss
+        pos  three.tuplet'         <1070 1170 0 0>  beamed.NNSS beamed.LLSS beamed.LLNN    ;
+        # es
+        pos  three.tuplet'         < 810 1170 0 0>  beamed.NNSN beamed.LSNN                ;
+    
+    # quintuplets
+        # e.e
+        pos  five.tuplet'          < 900 1170 0 0>  beamed.NNSN rhythmDot.beamed beamed.LNNN  ;
+        pos  five.tuplet'          <1792 1170 0 0>  beamed.NNSS beamed.LLSS beamed.LLSS beamed.LLSS beamed.LLNN  ;
+        pos  five.tuplet'          <1932 1170 0 0>  beamed.NNSN beamed.LNSN beamed.LNSN beamed.LNSN beamed.LNNN  ;
 
-	# unbeamed groups
-		# qe
-		pos  three.tuplet.bracket' < 800  950 0 0>  quarter.shortStem eighth.shortStem     ;
-		# hq
-		pos  three.tuplet.bracket' < 800  950 0 0>  half.shortStem quarter.shortStem       ;
+    # unbeamed groups
+        # qe
+        pos  three.tuplet.bracket' < 800  950 0 0>  quarter.shortStem eighth.shortStem     ;
+        # hq
+        pos  three.tuplet.bracket' < 800  950 0 0>  half.shortStem quarter.shortStem       ;
 
-	# single notes
-		ignore pos  @operators  @bracketedTupletNumbers'                 @unbeamedNotes  @notes  ;
-		       pos  @operators  @bracketedTupletNumbers' < 590 620 0 0>  @stemlessNotes          ;
-		       pos  @operators  @bracketedTupletNumbers' < 770 950 0 0>  @unbeamedNotes          ;
-		ignore pos              @bracketedTupletNumbers'                 @unbeamedNotes  @notes  ;
-		       pos              @bracketedTupletNumbers' <   0 920 0 0>  @flaggedNotes           ;
-		       pos              @bracketedTupletNumbers' <-100 620 0 0>  @stemlessNotes          ;
-		       pos              @bracketedTupletNumbers' <-100 920 0 0>  @unbeamedNotes          ;
-	} KERN_tupletPosition;
+    # single notes
+        ignore pos  @operators  @bracketedTupletNumbers'                 @unbeamedNotes  @notes  ;
+               pos  @operators  @bracketedTupletNumbers' < 590 620 0 0>  @stemlessNotes          ;
+               pos  @operators  @bracketedTupletNumbers' < 770 950 0 0>  @unbeamedNotes          ;
+        ignore pos              @bracketedTupletNumbers'                 @unbeamedNotes  @notes  ;
+               pos              @bracketedTupletNumbers' <   0 920 0 0>  @flaggedNotes           ;
+               pos              @bracketedTupletNumbers' <-100 620 0 0>  @stemlessNotes          ;
+               pos              @bracketedTupletNumbers' <-100 920 0 0>  @unbeamedNotes          ;
+    } KERN_tupletPosition;
 
 
 # =================================================================================
 # FEATURES
 
 feature kern {
-	lookup KERN_rhythmDots                     ;
-	lookup KERN_notes                          ;
-	lookup KERN_stemlessNotesVerticalPosition  ;
-	lookup KERN_operators                      ;
-	lookup KERN_tupletPosition                 ;
-	} kern;
+    lookup KERN_rhythmDots                     ;
+    lookup KERN_notes                          ;
+    lookup KERN_stemlessNotesVerticalPosition  ;
+    lookup KERN_operators                      ;
+    lookup KERN_parenthesesAndArrows           ;
+    lookup KERN_tupletPosition                 ;
+    } kern;
